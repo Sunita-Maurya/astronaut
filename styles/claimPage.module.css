@@ -1,0 +1,15 @@
+.movehero {
+  border: 1px solid red;
+  animation: anim 2s ease infinite;
+}
+@keyframes anim {
+  0% {
+    translate: 0% 0%;
+  }
+  50% {
+    translate: 20% -5%;
+  }
+  100% {
+    translate: 20% -5%;
+  }
+}

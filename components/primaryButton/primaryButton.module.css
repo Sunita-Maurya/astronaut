@@ -1,0 +1,42 @@
+.button {
+  border: 1px solid #8b2ad3;
+  background-color: rgb(139 42 211 /0.4);
+  /* max-width: 20rem; */
+  /* max-width: 200px; */
+  position: relative;
+  transition: all 0.5s;
+}
+
+.button::before {
+  content: "";
+  height: 60%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #8b2ad3;
+  /* border: 1px solid red; */
+  rotate: -45deg;
+  translate: -50% -50%;
+  background-color: var(--psudobgb);
+}
+
+.button::after {
+  content: "";
+  height: 50%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #8b2ad3;
+  rotate: -45deg;
+  translate: 50% 50%;
+  background-color: var(--psudobga);
+}
+.button:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+.button:hover .arrowIcon {
+  color: white;
+}

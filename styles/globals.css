@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500&family=Montserrat:wght@500&family=Russo+One&family=Ubuntu:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #8b2ad3;
+}
+
+body {
+  background-color: #000000;
+  background-image: url("/assets/images/appBg.svg");
+  height: max-content;
+  width: 100%;
+  color: white;
+}
+h1 {
+  font-family: "Ubuntu";
+  font-size: 4rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+p {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.arrow {
+  font-size: 6rem;
+}
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: calc(1vw + 1.5rem);
+    line-height: calc(1vw + 2.5rem);
+  }
+  h2 {
+    font-size: calc(1vw + 1rem);
+  }
+  .arrow {
+    font-size: calc(1vw + 3rem);
+  }
+}
+
+.stroke-text {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  /* font-size: 3.7rem; */
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--mainColor);
+  transition: -webkit-text-fill-color 2s;
+}
+.stroke-text:hover {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+}
+
+/* ------------------------------------------------------abut us page=-------------------- */
+
+/* -------ACCORDION------------------ */
+div.c {
+  position: relative;
+}
+.input-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: 0;
+}
+.ques {
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--mainColor);
+}
+label {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+
+  padding: 10px;
+  align-items: center;
+}
+.p {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  background-color: var(--mainColor);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+div.p p {
+  padding: 2em;
+}
+.input-box:checked ~ .ques label::before {
+  border-left: 15px solid transparent;
+  border-top: 20px solid white;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+.input-box:checked ~ .ques ~ div.p {
+  max-height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .ques {
+    font-size: 18px;
+  }
+}
