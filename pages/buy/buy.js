@@ -2,15 +2,9 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import PrimaryButton from "../../components/primaryButton/PrimaryButton";
-import { RiArrowRightDownLine } from "react-icons/ri";
 import Form from "../../components/Form";
-import Modal from "react-modal";
-
 import { AstronautContract } from "../../components/AstronautContract";
 import Footer from "../../components/Footer";
-import s from "../../components/primaryButton/primaryButton.module.css";
-import PresaleProgressbar from "../../components/presaleprogressbar/PresaleProgressbar";
-import { ModalBeanSpacer, ModalForWallet } from "../../components/Modals";
 import Head from "next/head";
 
 const style = {

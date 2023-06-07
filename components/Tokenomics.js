@@ -22,7 +22,7 @@ const progressbar = [
   },
 ];
 
-const Tokenmonics = ({ tokenomicsref }) => {
+const Tokenmonics = () => {
   const [progress, setProgress] = useState(progressbar);
 
   return (

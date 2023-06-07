@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import PrimaryButton from "./primaryButton/PrimaryButton";
 import { RiArrowRightDownLine } from "react-icons/ri";
@@ -21,10 +21,6 @@ const style = {
 };
 
 const Hero = () => {
-  const astronautref = useRef(null);
-  const aboutref = useRef(null);
-  const tokenomicsref = useRef(null);
-
   return (
     <>
       {/* <div className={`${style.main_margin} ${style.border_x}`}> */}
@@ -112,7 +108,6 @@ const Hero = () => {
 
       {/*-------------------- / What is Astronaut? /-------------------- */}
       <div
-        ref={astronautref}
         id="astronaut"
         className={` lg:px-44 px-5 py-8 border border-x-0 border-b-0`}
       >
@@ -289,11 +284,21 @@ const Hero = () => {
         alt="plywin images"
       />
       {/* ------------------------------ / Astronaut News / -----------*/}
-      <div className={style.content_box_padding} id="news">
+      <div className={` ${style.content_box_padding} `} id="news">
         <h1 className="text-center">/ Astronaut News /</h1>
+        <div className="border h-[400px] md:w-[70%] w-full bg-white mx-auto my-8 flex items-end">
+          <div className="bg-[#8B2AD3] w-full md:h-[100px] h-[150px] p-3">
+            june 2 ,2023
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has standard dummy ...
+            </p>
+            <p className="text-black">read more...</p>
+          </div>
+        </div>
       </div>
       {/* --------------------------our partners ----------------- */}
-      <div className={style.content_box_padding}>
+      <div className={` ${style.content_box_padding}`}>
         <Our_Partners />
         <h1 className="stroke-text 2xl:text-[4.4rem] xl:text-[4rem] lg:text-[3.2rem] text-[2rem]">
           Buy Astronaut ($NAUT)

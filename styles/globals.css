@@ -99,7 +99,16 @@ div.c {
   color: white;
   font-size: 1.5rem;
   position: relative;
-  border-bottom: 1px solid var(--mainColor);
+  border-top: 1px solid var(--mainColor);
+}
+.ques::after {
+  /* content: "\2212"; */
+  content: " \002B	";
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 label {
   cursor: pointer;
@@ -113,25 +122,30 @@ label {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.5s;
-  background-color: var(--mainColor);
+  /* background-color: var(--mainColor); */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 div.p p {
-  padding: 2em;
+  padding-block: 1em;
+  padding-inline: 50px;
 }
+
 .input-box:checked ~ .ques label::before {
   border-left: 15px solid transparent;
   border-top: 20px solid white;
   margin-top: 12px;
   margin-right: 10px;
 }
+.input-box:checked ~ .ques::after {
+  content: "\2212";
+}
 .input-box:checked ~ .ques ~ div.p {
-  max-height: 100px;
+  max-height: 250px;
 }
 
 @media screen and (max-width: 500px) {
   .ques {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

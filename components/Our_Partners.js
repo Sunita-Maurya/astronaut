@@ -2,18 +2,15 @@ import React from "react";
 import Image from "next/image";
 const images = [
   "/assets/icons/kucoin.svg",
-  "/assets/icons/meritCircle.svg",
+  "/assets/icons/bitmart.svg",
   "/assets/icons/chailLink.svg",
-  "/assets/icons/kaddex.svg",
-  "/assets/icons/gate.svg",
-  "/assets/icons/kadena.svg",
-  "/assets/icons/citizen.svg",
-  "/assets/icons/shiba.svg",
-  "/assets/icons/polygon.svg",
+  "/assets/icons/uniswap.svg",
+  "/assets/icons/lbank.svg",
+  "/assets/icons/global.svg",
 ];
 
 const style = {
-  wrapper: `grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 py-5 `,
+  wrapper: `grid  md:grid-cols-3 grid-cols-2 justify-center place-items-center gap-5 py-5 `,
 };
 
 const Our_Partners = () => {
