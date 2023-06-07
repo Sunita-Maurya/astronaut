@@ -13,9 +13,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --mainColor: #8b2ad3;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -127,4 +133,19 @@ div.p p {
   .ques {
     font-size: 18px;
   }
+}
+
+.moons-bg {
+  background-image: url(/assets/images/presale-now-bg.png);
+  background-size: 100% 100%;
+}
+
+.outer-frame-bg {
+  background-image: url(/assets/images/outer-frame.png);
+  background-size: 100% 100%;
+}
+
+.inner-frame-bg {
+  background-image: url(/assets/images/inner-frame.png);
+  background-size: 100% 100%;
 }

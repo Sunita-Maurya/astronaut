@@ -14,10 +14,12 @@ const style = {
   grid_container: "grid lg:grid-cols-2 grid-cols-1 gap-x-12 place-items-center",
   order_change: "lg:order-none order-first",
 };
-const claim = () => {
+const Claim = () => {
   return (
     <>
-    <Head><title>Claim</title></Head>
+      <Head>
+        <title>Claim</title>
+      </Head>
       <div className="container mx-auto">
         <div className={`${style.main_margin} ${style.border_x}`}>
           <Navbar
@@ -112,4 +114,4 @@ const claim = () => {
   );
 };
 
-export default claim;
+export default Claim;

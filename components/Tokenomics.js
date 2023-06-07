@@ -26,7 +26,7 @@ const Tokenmonics = ({ tokenomicsref }) => {
   const [progress, setProgress] = useState(progressbar);
 
   return (
-    <div ref={tokenomicsref} className="py-5">
+    <div id="tokenmonics" className="py-5 border border-x-0 border-b-0">
       <h1 className="text-center">/ Tokenomics /</h1>
       <div className="grid lg:grid-cols-2 grid-cols-1 items-center md:px-14 px-5">
         <Image
