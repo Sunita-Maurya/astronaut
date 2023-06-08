@@ -42,7 +42,9 @@ const Claim = () => {
               </div>
 
               <div>
-                <h2 className="text-center py-5">CLAIM YOUR NAUT TOKENS</h2>
+                <h1 className="md:text-start text-center py-5">
+                  CLAIM YOUR NAUT TOKENS
+                </h1>
                 <p className="md:text-start text-center">
                   Welcome to Astronaut the ultimate meta launchpad! The pre-sale
                   has now sold out. You can use this page to claim your
@@ -73,7 +75,7 @@ const Claim = () => {
               className={`${style.grid_container} md:text-start text-center`}
             >
               <div className="md:py-0 py-5">
-                <h2 className="md:py-0 py-5">
+                <h2 className="md:py-0 py-5 text-[#CB8CFA]">
                   ADDING ASTRONAUT TO YOUR WALLET
                 </h2>
                 <p>

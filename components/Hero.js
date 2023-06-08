@@ -122,14 +122,14 @@ const Hero = () => {
         <div
           className={`flex gap-x-8  items-center  py-3 border-[var(--mainColor)] ${style.border_y}`}
         >
-          <h1>01</h1>
+          <h1 className="text-[#CB8CFA]">01</h1>
           <p>
             Launchpad at it’s core with a DeFi and Metaverse ecosystem to
             follow. Shaping the way and future of presales.
           </p>
         </div>
         <div className="flex gap-x-8 items-center py-3">
-          <h1>02</h1>
+          <h1 className="text-[#CB8CFA]">02</h1>
           <p>
             Investors who seek to be part of the most sought after presales can
             enjoy savvy ROI’s on projects that launch on Astronaut.
@@ -138,14 +138,14 @@ const Hero = () => {
         <div
           className={`flex gap-x-8  items-center  py-3 ${style.border_y} border-[var(--mainColor)]`}
         >
-          <h1>03</h1>
+          <h1 className="text-[#CB8CFA]">03</h1>
           <p>
             Astronaut will lead the new era and evolved landscape with a state
             of the art platform allowing new ideas to raise capital securely.
           </p>
         </div>
         <div className="flex gap-x-8 items-center py-3  ">
-          <h1>04</h1>
+          <h1 className="text-[#CB8CFA]">04</h1>
           <p>
             Information hub and community backed by a team with tier 1
             experience and over 100+ partnerships.

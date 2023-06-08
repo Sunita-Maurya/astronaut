@@ -13,13 +13,13 @@ const Form = () => {
       }}
     >
       <div className="text-center  text-[var(--mainColor)] py-8">
-        <h2 className="">Talk to us </h2>
+        <h2 className="">TALK TO US</h2>
         <p className="">
           Leave your details below and we’ll contact you to discuss purchasing
           NAUT!
         </p>
       </div>
-      <div className="flex flex-wrap justify-between gap-x-8  ">
+      <div className="flex flex-wrap justify-between gap-x-8  text-[#8B2AD3]">
         <div className="md:w-[50%] w-full">
           <label htmlFor="firstName"> First Name</label>
           <input
@@ -37,7 +37,7 @@ const Form = () => {
           />
         </div>
       </div>
-      <div className="flex flex-wrap justify-between gap-x-8 ">
+      <div className="flex flex-wrap justify-between gap-x-8 text-[#8B2AD3]">
         <div className="md:w-[50%] w-full flex gap-x-[10%]">
           <div className=" w-[30%] ">
             <label htmlFor="firstName" className="lg:whitespace-nowrap">
@@ -82,7 +82,7 @@ const Form = () => {
           </select>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between gap-x-8 ">
+      <div className="flex flex-wrap justify-between gap-x-8 text-[#8B2AD3]">
         <div className="md:w-[50%] w-full ">
           <label htmlFor="firstName">Investment Budget</label>
           <select
@@ -101,7 +101,7 @@ const Form = () => {
         <div className="md:w-[40%] w-full flex items-end md:justify-start justify-center  ">
           <div className="w-[150px] md:py-0 py-8">
             <PrimaryButton mixcolora={"#180139"} mixcolorb={"#180139"}>
-              <button className="p-2 px-3">SUBMIT</button>
+              <button className="p-2 px-3 text-white">SUBMIT</button>
             </PrimaryButton>
           </div>
         </div>

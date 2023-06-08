@@ -87,7 +87,7 @@ const about = () => {
                 <h1>Our Values</h1>
                 <hr />
                 <div className="py-5">
-                  <h3>Passion and work ethic </h3>
+                  <h3 className="text-[#CB8CFA]">Passion and work ethic </h3>
                   <p>
                     We’re passionate about empowering the community through our
                     actions. We seek to educate and lead our Astronauts to allow
@@ -96,7 +96,7 @@ const about = () => {
                 </div>
                 <hr />
                 <div className="py-5">
-                  <h3>Ambition meets drive</h3>
+                  <h3 className="text-[#CB8CFA]">Ambition meets drive</h3>
                   <p>
                     We’re not afraid to make big plans, because we meet them
                     with diligent effort. Constant optimization and the highest
@@ -105,7 +105,7 @@ const about = () => {
                 </div>
                 <hr />
                 <div className="py-5">
-                  <h3>Built for the real world</h3>
+                  <h3 className="text-[#CB8CFA]">Built for the real world</h3>
                   <p>
                     Ease of use is a significant hurdle in the use case of
                     blockchain and crypto. We’re here to change that. Our
@@ -124,8 +124,11 @@ const about = () => {
               </div>
             </div>
             <Our_Partners />
+            <h1 className="stroke-text 2xl:text-[4.4rem] xl:text-[4rem] lg:text-[3.2rem] text-[2rem] py-8">
+              Buy Astronaut ($NAUT){" "}
+            </h1>
             {/* ------------------------ FAQS */}
-            <div className="py-12">
+            <div className="">
               <h1 className="py-10">FAQS</h1>
 
               <div className="c">

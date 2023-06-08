@@ -232,20 +232,3 @@ const Navbar = ({}) => {
 };
 
 export default Navbar;
-
-/**
- * <Navbar socialIcons = false/>
- *
- *
- *
- * const Navbar = ({socialIcons = true, links=true})=>{
- *
- *  { socialIcons && <div>social icons</div> }
- *
- *
- *
- * }
- *
- *
- *
- */

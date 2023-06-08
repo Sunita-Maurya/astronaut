@@ -58,8 +58,8 @@ const Buy = () => {
           {/* --------------------------------- how to buy -------------------- */}
           <div ref={buyref} className={`${style.container_padding} border`}>
             <h1 className="text-center py-5">/ HOW TO BUY /</h1>
-            <div className="flex gap-x-8 lg:flex-row flex-col  lg:items-start items-center border border-x-0 border-[var(--mainColor)] py-8">
-              <h1>01</h1>
+            <div className="flex gap-x-8 lg:flex-row flex-col   lg:items-start items-center border border-x-0 border-[var(--mainColor)] py-8">
+              <h1 className="  ">01</h1>
               <div className=" md:py-0 py-2">
                 <p>
                   To begin, make sure you have a MetaMask wallet installed on
